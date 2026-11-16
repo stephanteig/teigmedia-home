@@ -18,10 +18,11 @@ staf/
   about/, about/stephan/, about/aron/
   contact/, press/, privacy/
   assets/css/staf.css                Fonts, hover/focus states, hero, small-screen overrides
-  assets/js/staf.js                  Video loading from Google Drive, hero player, contact mailto
+  assets/js/staf.js                  Video loading, hero player, phone menu, contact mailto
   assets/fonts/                      Alte Haas Grotesk Bold (woff2)
   assets/img/                        All images and logos (webp/png/svg)
-  assets/videos.json                 Google Drive file IDs for every video
+  assets/videos.json                 Video key → web cut in assets/video/ (+ Drive archive ID)
+  assets/video/                      Web cuts of the videos (H.264, small)
 ```
 
 Plain HTML/CSS/JS, no build step. Page layout lives inline in each page; shared rules are in `staf.css`.
@@ -32,17 +33,20 @@ All internal links are absolute and start with `/staf/`.
 Ink `#111310` · Snow `#F4F3ED` · Paper `#E6E4DA` · King Yellow `#C8A83E` (used only for The King in Yellow).
 Display: Alte Haas Grotesk Bold. Body: Inter. Labels: IBM Plex Mono.
 
-## Videos (Google Drive, not GitHub)
+## Videos (small web cuts in GitHub, masters in Drive)
 
-Videos are never committed. `assets/videos.json` maps a key to a Drive file:
+The site plays short, compressed web cuts from `assets/video/` (about 4.4 MB for all six).
+Google Drive cannot be the player: it answers 403 to any video request that comes from another website.
+Drive is the archive: the same files live in `02_Film & Media/STAF Films/Nettside-video`
+(https://drive.google.com/drive/folders/1sZTA21bOHk2YW24mdL1dC34_xc0kKd9w), and full-quality masters stay there only.
 
-1. Upload the file named in `videos.json` to Drive (`02_Film & Media/STAF Films/Nettside-video` (https://drive.google.com/drive/folders/1sZTA21bOHk2YW24mdL1dC34_xc0kKd9w)).
-2. Share it as "Anyone with the link can view".
-3. Copy the ID from the share link (`https://drive.google.com/file/d/<ID>/view`) into `drive_id`.
+`assets/videos.json` maps each key to its web cut (`src`) and the Drive copy (`drive_id`). To add or swap a video:
 
-A key with an empty `drive_id` shows its poster image, so the page never looks broken.
-Use H.264 MP4 (not HEVC/MOV) and keep clips small: Drive throttles large files and is not a streaming host.
-If playback is unreliable, move the files to a proper video host and swap `driveUrl()` in `staf.js`.
+1. Export an H.264 MP4 web cut (not HEVC/MOV), ideally under 3 MB, with `-movflags +faststart`.
+2. Put it in `assets/video/` and upload the same file to the Drive folder.
+3. Update `src` and `drive_id` in `videos.json`.
+
+A key without a `src` shows its poster image, so the page never looks broken.
 
 ## Moving to its own domain
 
