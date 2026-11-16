@@ -1,24 +1,29 @@
-# Teig Media homepage starter
+# Teig Media — Stephan Teig portfolio
 
-A simple, editable homepage built with React and Vite.
+A responsive Norwegian/English portfolio for Stephan Teig, built with React and Vite and published to GitHub Pages at `teigmedia.com`.
 
-## Get started
+## Pages and links
 
-1. Install Node.js if it is not already installed.
-2. In this folder, run `npm install`.
-3. Run `npm run dev` and open the local address Vite prints.
-4. Edit the words, links, and project cards near the top of `src/main.jsx`.
-5. Change visual styles in `src/styles.css`.
+- `#home` — introduction, selected work, STAF Films, studio tools, and a Jellyfin shortcut.
+- `#resume` — experience, roles, education, skills, languages, and the downloadable PDF CV.
+- `#works` — all 13 projects with category filters and film previews.
+- `#contact` — contact details and the existing Formspree contact form.
+- `/staf/` — the STAF Films site, copied from the portfolio repository without editing its files.
+- `/shotlist-planner/client/` and `/studio-tools/` — existing static apps, copied as-is.
 
-## Before launch
+## Local development
 
-- Replace the sample project titles and Unsplash photos in `src/main.jsx`.
-- Update the email and social links in the footer.
-- Set your preferred page title and description in `index.html`.
-- Run `npm run build` to create the production site in `dist/`.
+```bash
+npm install
+npm run dev
+```
 
-The starter uses Vite for local development and builds, React for the page structure, and plain CSS for styling.
+Edit the page layout in `src/main.jsx`, visual styles in `src/styles.css`, and portfolio content in `src/content.json`. Keep the contents of `public/staf/` unchanged when updating the main Teig Media site.
 
-## GitHub Pages deployment
+## Build and publish
 
-The GitHub Actions workflow builds the site and deploys `dist/` to GitHub Pages when changes are pushed to `main`. The custom domain is set to `teigmedia.com` in `public/CNAME`. In the repository's Settings → Pages, set the source to **GitHub Actions**. In Cloudflare DNS, create `A` records for `@` to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`, plus a `CNAME` record for `www` to `stephanteig.github.io`. Set these records to **DNS only** while GitHub verifies the domain and issues its certificate. Enable **Enforce HTTPS** in Settings → Pages once available.
+```bash
+npm run build
+```
+
+The GitHub Actions workflow builds the site and deploys the `dist/` folder to GitHub Pages when changes are pushed to `main`. Static pages, assets, `CNAME`, and `.nojekyll` are served from the build output.

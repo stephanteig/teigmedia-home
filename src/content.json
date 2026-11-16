@@ -1,0 +1,710 @@
+{
+  "navn": "Stephan Teig",
+  "tittel": {
+    "no": "Film & Medieproduksjon",
+    "en": "Film & Media Production"
+  },
+  "sted": "Sarpsborg / Fredrikstad, Norge",
+  "epost": "teig.stephan@gmail.com",
+  "telefon": "+47 921 24 207",
+  "nettside": "stephanteig.github.io",
+  "bilde": "Media/IMG_3340.JPG",
+  "cvPdf": "Media/StephanTeigCV.pdf",
+  "formspreeId": "mwvrraez",
+  "bio": {
+    "no": "18 år gammel lærling i innholdsproduksjon hos Studio Wallin i Fredrikstad — jobber med foto, video, brand og podkast. Lager kortfilmer, fargekorrigerer, designer verktøy og instruerer Ju-Jitsu. Trives best når kamera, kode og historiefortelling møtes.",
+    "en": "18 years old, apprentice content producer at Studio Wallin in Fredrikstad — working across photo, video, brand and podcast. I make short films, grade colour, build tools, and teach Ju-Jitsu. Best when camera, code and storytelling meet."
+  },
+  "fraser": {
+    "no": [
+      "kortfilmer.",
+      "fargegradering.",
+      "innhold som engasjerer.",
+      "verktøy som hjelper.",
+      "esport-turneringer."
+    ],
+    "en": [
+      "short films.",
+      "colour grades.",
+      "engaging content.",
+      "tools that help.",
+      "esports tournaments."
+    ]
+  },
+  "stats": [
+    {
+      "tall": "7+",
+      "label": {
+        "no": "År i bransjen",
+        "en": "Years in the field"
+      }
+    },
+    {
+      "tall": "12",
+      "label": {
+        "no": "Prosjekter",
+        "en": "Projects"
+      }
+    },
+    {
+      "tall": "1.dan",
+      "label": {
+        "no": "Jiu-Jitsu",
+        "en": "Jiu-Jitsu"
+      }
+    }
+  ],
+  "nav": [
+    {
+      "id": "home",
+      "label": {
+        "no": "Hjem",
+        "en": "Home"
+      }
+    },
+    {
+      "id": "resume",
+      "label": {
+        "no": "CV",
+        "en": "Resume"
+      }
+    },
+    {
+      "id": "works",
+      "label": {
+        "no": "Prosjekter",
+        "en": "Projects"
+      }
+    },
+    {
+      "id": "contact",
+      "label": {
+        "no": "Kontakt",
+        "en": "Contact"
+      }
+    }
+  ],
+  "ferdigheter": [
+    {
+      "navn": {
+        "no": "Kamera & filming",
+        "en": "Camera & filming"
+      },
+      "prosent": 90
+    },
+    {
+      "navn": {
+        "no": "Videoredigering",
+        "en": "Video editing"
+      },
+      "prosent": 88
+    },
+    {
+      "navn": "DaVinci Resolve",
+      "prosent": 90
+    },
+    {
+      "navn": {
+        "no": "Fargegradering",
+        "en": "Colour grading"
+      },
+      "prosent": 85
+    },
+    {
+      "navn": {
+        "no": "Lyddesign",
+        "en": "Sound design"
+      },
+      "prosent": 75
+    },
+    {
+      "navn": {
+        "no": "Innholdsproduksjon",
+        "en": "Content production"
+      },
+      "prosent": 85
+    },
+    {
+      "navn": {
+        "no": "Fotografi",
+        "en": "Photography"
+      },
+      "prosent": 70
+    },
+    {
+      "navn": "OBS Studio",
+      "prosent": 85
+    },
+    {
+      "navn": {
+        "no": "Live produksjon",
+        "en": "Live production"
+      },
+      "prosent": 80
+    }
+  ],
+  "sprak": [
+    {
+      "namn": {
+        "no": "Norsk",
+        "en": "Norwegian"
+      },
+      "nivaa": 5
+    },
+    {
+      "namn": {
+        "no": "Engelsk",
+        "en": "English"
+      },
+      "nivaa": 4
+    }
+  ],
+  "sosiale": [
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@StephanTeig"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/stephanteig"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@stephan.teig"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/stephan-teig-727a8428b/"
+    }
+  ],
+  "erfaring": [
+    {
+      "aar": "2025 –",
+      "tittel": {
+        "no": "Lærling — foto, video & brand",
+        "en": "Apprentice — photo, video & brand"
+      },
+      "sted": "Studio Wallin AS · Fredrikstad",
+      "tekst": {
+        "no": "Foto, videoproduksjon, brand-arbeid og podkast-workflow for kunder inkl. HYSJ, Purply og Installatøren. Formelt lærling innen 31. august 2026, i praksis allerede aktiv.",
+        "en": "Photo, video production, brand work and podcast workflow for clients incl. HYSJ, Purply and Installatøren. Formally apprentice by 31 August 2026, already active in practice."
+      }
+    },
+    {
+      "aar": "2024 –",
+      "tittel": {
+        "no": "Ungdomstrener nivå B",
+        "en": "Youth coach level B"
+      },
+      "sted": "Sentrum Kampsport",
+      "tekst": {
+        "no": "Fast trener 2 ganger per uke.",
+        "en": "Regular coach twice a week."
+      }
+    },
+    {
+      "aar": "2026",
+      "tittel": {
+        "no": "Ballfotograf",
+        "en": "Prom photographer"
+      },
+      "sted": "Hvaler Ungdomsskole",
+      "tekst": {
+        "no": "Fotograferte under ballbildearrangementet.",
+        "en": "Photographed during the prom photo event."
+      }
+    },
+    {
+      "aar": "2025–2026",
+      "tittel": {
+        "no": "Deltidsansatt",
+        "en": "Part-time employee"
+      },
+      "sted": "McDonald's Sarpsborg",
+      "tekst": {
+        "no": "Deltidsjobb ved siden av skole og andre aktiviteter.",
+        "en": "Part-time work alongside school and other activities."
+      }
+    },
+    {
+      "aar": "2024–2025",
+      "tittel": {
+        "no": "Tilkalingsvikar, butikkansatt",
+        "en": "On-call retail assistant"
+      },
+      "sted": "Scrappiness AS",
+      "tekst": {
+        "no": "Tilkalingsvikar i butikk.",
+        "en": "On-call retail position."
+      }
+    },
+    {
+      "aar": "2021–2024",
+      "tittel": {
+        "no": "Ungdomstrener nivå C",
+        "en": "Youth coach level C"
+      },
+      "sted": "Sentrum Kampsport",
+      "tekst": {
+        "no": "Fast trener 2 ganger per uke.",
+        "en": "Regular coach twice a week."
+      }
+    },
+    {
+      "aar": "2022",
+      "tittel": {
+        "no": "Kiosk og salg",
+        "en": "Kiosk & sales"
+      },
+      "sted": "Greåker Marked",
+      "tekst": {
+        "no": "Kiosk og salgsarbeid under arrangement.",
+        "en": "Kiosk and sales work at event."
+      }
+    },
+    {
+      "aar": "2019–2022",
+      "tittel": {
+        "no": "Assistent og kioskarbeider",
+        "en": "Assistant & kiosk worker"
+      },
+      "sted": "Øisteins Juleverksted",
+      "tekst": {
+        "no": "Sesongarbeid som assistent og i kiosk.",
+        "en": "Seasonal work as assistant and in kiosk."
+      }
+    },
+    {
+      "aar": "Vår/Sommer 2019",
+      "tittel": {
+        "no": "Produksjonsassistent og statist",
+        "en": "Production assistant & extra"
+      },
+      "sted": "TV-produksjon: Øisteins Juleblyant",
+      "tekst": {
+        "no": "Produksjonsassistent og statist på TV-produksjon.",
+        "en": "Production assistant and extra on TV production."
+      }
+    }
+  ],
+  "verv": [
+    {
+      "aar": "2026",
+      "tittel": {
+        "no": "Arrangør og kommentator",
+        "en": "Organizer and Commentator"
+      },
+      "sted": "Respawn Østfold · Glemmen VGS, Fredrikstad",
+      "tekst": {
+        "no": "Arrangerte MCSR Ranked Minecraft speedrun-turnering med cash prize og live stream. Ansvar for produksjon, promotering, sponsorarbeid og kommentator på Twitch.",
+        "en": "Organized MCSR Ranked Minecraft speedrun tournament with cash prize and live stream. Handled production, promotion, sponsor outreach and commentating on Twitch."
+      }
+    },
+    {
+      "aar": "2025 –",
+      "tittel": {
+        "no": "Styreleder",
+        "en": "Board chair"
+      },
+      "sted": {
+        "no": "Ungdomsstyret, Sentrum Kampsport (SKS)",
+        "en": "Youth board, Sentrum Kampsport (SKS)"
+      },
+      "tekst": {
+        "no": "Leder ungdomsstyret ved Sentrum Kampsport.",
+        "en": "Leading the youth board at Sentrum Kampsport."
+      }
+    },
+    {
+      "aar": "2023",
+      "tittel": {
+        "no": "Styremedlem",
+        "en": "Board member"
+      },
+      "sted": {
+        "no": "Rå (ungdomsforening)",
+        "en": "Rå (youth association)"
+      },
+      "tekst": {
+        "no": "Tilrettelegger økonomisk assistanse for ungdom.",
+        "en": "Facilitating financial assistance for youth."
+      }
+    },
+    {
+      "aar": "2022–2024",
+      "tittel": {
+        "no": "Styremedlem",
+        "en": "Board member"
+      },
+      "sted": {
+        "no": "Ungdomsstyret, Sentrum Kampsport",
+        "en": "Youth board, Sentrum Kampsport"
+      },
+      "tekst": {
+        "no": "Styremedlem i ungdomsstyret.",
+        "en": "Board member of the youth board."
+      }
+    },
+    {
+      "aar": "2019–2024",
+      "tittel": {
+        "no": "Elevrådsleder og nestleder",
+        "en": "Student council president & deputy"
+      },
+      "sted": "Elevråd, CIS Sarpsborg",
+      "tekst": {
+        "no": "Ledet og representerte elevene ved skolen.",
+        "en": "Led and represented the students at school."
+      }
+    },
+    {
+      "aar": "2018–2021",
+      "tittel": {
+        "no": "Assisterende ungdomstrener",
+        "en": "Assistant youth coach"
+      },
+      "sted": "Sentrum Kampsport",
+      "tekst": {
+        "no": "Assisterte ungdomstrening 2 ganger per uke.",
+        "en": "Assisted youth training twice a week."
+      }
+    }
+  ],
+  "utdanning": [
+    {
+      "aar": "2024 – 2026",
+      "tittel": {
+        "no": "Informasjonsteknologi og medieproduksjon",
+        "en": "IT and Media Production"
+      },
+      "sted": "Glemmen videregående skole",
+      "tekst": {
+        "no": "VG1 med høyt snitt. VG2 fullført våren 2026 med fokus på film, redigering og produksjon. Nå i læretid hos Studio Wallin.",
+        "en": "VG1 with high GPA. VG2 completed spring 2026, focusing on film, editing and production. Now an apprentice at Studio Wallin."
+      }
+    },
+    {
+      "aar": "2019 – 2024",
+      "tittel": {
+        "no": "Grunnskole",
+        "en": "Primary school"
+      },
+      "sted": "Children's International School Sarpsborg",
+      "tekst": {
+        "no": "Internasjonal skole med undervisning på engelsk.",
+        "en": "International school with instruction in English."
+      }
+    },
+    {
+      "aar": "2014 – 2019",
+      "tittel": {
+        "no": "Grunnskole",
+        "en": "Primary school"
+      },
+      "sted": "Lande barneskole",
+      "tekst": {
+        "no": "",
+        "en": ""
+      }
+    }
+  ],
+  "prosjekter": [
+    {
+      "tittel": "Respawn Østfold",
+      "rolle": {
+        "no": "Esport-arrangør · Kommentator",
+        "en": "Esports Organizer · Commentator"
+      },
+      "tekst": {
+        "no": "MCSR Ranked Minecraft speedrun-turnering med cash prize, streamet live fra Glemmen VGS i Fredrikstad. Bracket-format, 1v1 online, kommentert på Twitch.",
+        "en": "MCSR Ranked Minecraft speedrun tournament with cash prize, streamed live from Glemmen VGS in Fredrikstad. Bracket format, 1v1 online, commented on Twitch."
+      },
+      "type": "ingen",
+      "filter": "esport",
+      "lenke": "https://stephanteig.github.io/respawn-ostfold/",
+      "thumbnail": "Media/respawn-ostfold-banner.svg"
+    },
+    {
+      "tittel": "Et ekko av henne",
+      "rolle": {
+        "no": "Film",
+        "en": "Film"
+      },
+      "type": "drive",
+      "embed": "1MJ8R-8zVDB3qmyHoAP__SnrmKLm5354Q",
+      "filter": "film"
+    },
+    {
+      "tittel": "Reshoot",
+      "rolle": {
+        "no": "Film · Regi",
+        "en": "Film · Director"
+      },
+      "tekst": {
+        "no": "Kortfilm regissert og produsert fra manus til ferdig klipp. Del 2 ble laget i to parallelle versjoner.",
+        "en": "Short film directed and produced from script to final cut. Part 2 was made as two parallel versions."
+      },
+      "type": "youtube",
+      "embed": "akvZh0yoCF4",
+      "filter": "film"
+    },
+    {
+      "tittel": "Reshoot Del 2 — Valg 1",
+      "rolle": {
+        "no": "Film · Klipp",
+        "en": "Film · Edit"
+      },
+      "type": "youtube",
+      "embed": "5nsWRqXzUyY",
+      "filter": "film"
+    },
+    {
+      "tittel": "Reshoot Del 2 — Valg 2",
+      "rolle": {
+        "no": "Film · Klipp",
+        "en": "Film · Edit"
+      },
+      "type": "youtube",
+      "embed": "sajH28yctrw",
+      "filter": "film"
+    },
+    {
+      "tittel": "TEDx Fredrikstad",
+      "rolle": {
+        "no": "Foto · Kamera",
+        "en": "Photo · Camera"
+      },
+      "tekst": {
+        "no": "En av videoene fra TEDx Fredrikstad",
+        "en": "One of the videos from TEDx Fredrikstad"
+      },
+      "type": "youtube",
+      "embed": "sfBt5tgo5a8",
+      "filter": "foto"
+    },
+    {
+      "tittel": "MÆD Musikkvideo",
+      "rolle": {
+        "no": "Produsent",
+        "en": "Producer"
+      },
+      "tekst": {
+        "no": "Musikkvideo produsert og klippet for det lokale musikkprosjektet MÆD.",
+        "en": "Music video produced and edited for local music project MÆD."
+      },
+      "type": "youtube",
+      "embed": "y0vjikf5EI8",
+      "filter": "film"
+    },
+    {
+      "tittel": "Red Bull Reklame",
+      "rolle": {
+        "no": "Film · Regi",
+        "en": "Film · Director"
+      },
+      "tekst": {
+        "no": "Reklamekonsept i Red Bull sin stil — opptak, klipp og fargegradering.",
+        "en": "Advertisement concept in Red Bull's style — footage, editing and colour grading."
+      },
+      "type": "drive",
+      "embed": "1Ru1S7h7hhjcxhzlD99xoBmEOJlJRQSdx",
+      "filter": "film"
+    },
+    {
+      "tittel": "Like Him — Kolberg Volleyball",
+      "rolle": {
+        "no": "Film",
+        "en": "Film"
+      },
+      "type": "drive",
+      "embed": "1jV57ZGSrkjeDjnRASnaEHPV5FuZrUOXf",
+      "filter": "film"
+    },
+    {
+      "tittel": "Hvordan er det å gå på CIS Sarpsborg",
+      "rolle": {
+        "no": "Film",
+        "en": "Film"
+      },
+      "type": "drive",
+      "embed": "1kXr3ZOZc7MiXJmmomOR84baHu4VsOnLY",
+      "filter": "film"
+    },
+    {
+      "tittel": "Trace",
+      "rolle": {
+        "no": "SVG logo-animatør",
+        "en": "SVG logo animator"
+      },
+      "tekst": {
+        "no": "Next.js 15 + TypeScript. Animer logoer fra SVG-filer med justerbar hastighet og stil.",
+        "en": "Next.js 15 + TypeScript. Animate logos from SVG files with adjustable speed and style."
+      },
+      "type": "ingen",
+      "filter": "tech",
+      "lenke": "https://stephanteig.github.io/logo-animator/",
+      "github": "https://github.com/stephanteig/logo-animator"
+    },
+    {
+      "tittel": "Shotlist Planner",
+      "rolle": {
+        "no": "Produksjonsverktøy",
+        "en": "Production tool"
+      },
+      "tekst": {
+        "no": "Planleggingsverktøy for filmopptak. Under aktiv utvikling — migrerer til Azure.",
+        "en": "Shot planning tool for film productions. Under active development — migrating to Azure."
+      },
+      "type": "ingen",
+      "filter": "tech",
+      "badge": true,
+      "github": "https://github.com/stephanteig/shotlist-planner"
+    },
+    {
+      "tittel": "Color Preview",
+      "rolle": {
+        "no": "Obsidian-plugin",
+        "en": "Obsidian plugin"
+      },
+      "tekst": {
+        "no": "Publisert Obsidian-plugin for forhåndsvisning av farger i notater. PR #12013.",
+        "en": "Published Obsidian plugin for colour preview in notes. PR #12013."
+      },
+      "type": "ingen",
+      "filter": "tech"
+    }
+  ],
+  "ui": {
+    "lastNedCV": {
+      "no": "Last ned CV",
+      "en": "Download CV"
+    },
+    "kontaktTittel": {
+      "no": "Kontakt",
+      "en": "Contact"
+    },
+    "ferdigheterTittel": {
+      "no": "Ferdigheter",
+      "en": "Skills"
+    },
+    "sprakTittel": {
+      "no": "Språk",
+      "en": "Languages"
+    },
+    "folgMeg": {
+      "no": "Følg meg",
+      "en": "Follow me"
+    },
+    "heroLabel": {
+      "no": "// film + code",
+      "en": "// film + code"
+    },
+    "jegLager": {
+      "no": "Jeg lager",
+      "en": "I create"
+    },
+    "seProsjekter": {
+      "no": "Se prosjekter",
+      "en": "View projects"
+    },
+    "kontaktMeg": {
+      "no": "Kontakt meg",
+      "en": "Contact me"
+    },
+    "erfaring": {
+      "no": "Erfaring",
+      "en": "Experience"
+    },
+    "verv": {
+      "no": "Verv & engasjement",
+      "en": "Roles & engagement"
+    },
+    "utdanning": {
+      "no": "Utdanning",
+      "en": "Education"
+    },
+    "alle": {
+      "no": "alle",
+      "en": "all"
+    },
+    "kommerSnart": {
+      "no": "// in development",
+      "en": "// in development"
+    },
+    "contactHeadline": {
+      "no": "Direkte linje.",
+      "en": "Reach the studio."
+    },
+    "contactSub": {
+      "no": "Stephan Teig · Fredrikstad, Norge",
+      "en": "Stephan Teig · Fredrikstad, Norway"
+    },
+    "kontaktSideTittel": {
+      "no": "Send en melding",
+      "en": "Send a message"
+    },
+    "navnPlaceholder": {
+      "no": "Navn",
+      "en": "Name"
+    },
+    "epostPlaceholder": {
+      "no": "E-post",
+      "en": "Email"
+    },
+    "emnePlaceholder": {
+      "no": "Emne",
+      "en": "Subject"
+    },
+    "meldingPlaceholder": {
+      "no": "Melding...",
+      "en": "Message..."
+    },
+    "sendKnapp": {
+      "no": "Send melding",
+      "en": "Send message"
+    },
+    "senderMelding": {
+      "no": "Sender...",
+      "en": "Sending..."
+    },
+    "meldingSendt": {
+      "no": "Melding sendt! Takk.",
+      "en": "Message sent! Thanks."
+    },
+    "meldingFeil": {
+      "no": "Noe gikk galt. Prøv igjen.",
+      "en": "Something went wrong. Please try again."
+    },
+    "skjemaMangler": {
+      "no": "Fyll inn alle feltene.",
+      "en": "Please fill in all fields."
+    },
+    "ingenFormspree": {
+      "no": "Kontaktskjema ikke satt opp ennå.",
+      "en": "Contact form not set up yet."
+    },
+    "kortLabels": {
+      "epost": {
+        "no": "E-post",
+        "en": "Email"
+      },
+      "telefon": {
+        "no": "Telefon",
+        "en": "Phone"
+      },
+      "sted": {
+        "no": "Sted",
+        "en": "Location"
+      },
+      "nettside": {
+        "no": "Nettside",
+        "en": "Website"
+      }
+    },
+    "lukk": {
+      "no": "✕ LUKK",
+      "en": "✕ CLOSE"
+    }
+  },
+  "aksent": "#7c5cfc"
+}
