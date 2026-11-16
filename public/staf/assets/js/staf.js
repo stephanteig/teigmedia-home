@@ -134,12 +134,41 @@
     var skipBtn = document.getElementById("hero-skip");
     var soundBtn = document.getElementById("hero-sound");
     var replayBtn = document.getElementById("hero-replay");
-    var seconds = parseFloat(hero.dataset.seconds) || 6;
+    var fallback = parseFloat(hero.dataset.seconds) || 6;
+    // Slide timing comes from the slide's data attributes:
+    //   data-play="full"  plays the whole video once (the STAF opener), then moves on;
+    //   data-start / data-length play a segment of each video, starting at data-start seconds.
 
     var state = { active: 0, mode: "reel", t: 0, paused: reduce, muted: true };
     var last = performance.now();
 
     function videosIn(i) { return [].slice.call(slides[i].querySelectorAll("video")); }
+    function isFull(i) { return slides[i].dataset.play === "full"; }
+    function leadVideo(i) { var v = videosIn(i)[0]; return v && v.src ? v : null; }
+
+    // How long the active slide runs.
+    function lengthOf(i) {
+      var v = leadVideo(i);
+      if (isFull(i) && v && isFinite(v.duration) && v.duration > 0) return v.duration;
+      return parseFloat(slides[i].dataset.length) || fallback;
+    }
+
+    // Put every video of slide i at the start of its segment (or at 0 for a full play).
+    function cue(i) {
+      var start = isFull(i) ? 0 : (parseFloat(slides[i].dataset.start) || 0);
+      videosIn(i).forEach(function (v) {
+        function seek() { try { v.currentTime = Math.min(start, Math.max(0, (v.duration || start) - 0.1)); } catch (e) {} }
+        if (v.readyState >= 1) seek(); else v.addEventListener("loadedmetadata", seek, { once: true });
+      });
+    }
+
+    // The clock only runs while there is something to watch: a video that is actually playing,
+    // or a slide with no loaded video (poster or still image). Buffering does not eat the slide's time.
+    function running() {
+      var v = leadVideo(state.active);
+      if (!v) return true;
+      return !v.paused && v.readyState >= 3;
+    }
 
     function render() {
       var s = slides[state.active];
@@ -166,7 +195,7 @@
     }
 
     function paint() {
-      var pct = Math.min(100, (state.t / seconds) * 100);
+      var pct = Math.min(100, (state.t / lengthOf(state.active)) * 100);
       tiles.forEach(function (el, i) {
         var fill = el.querySelector(".rail-fill");
         var w = i === state.active ? pct : (state.mode === "reel" && i < state.active ? 100 : 0);
@@ -175,21 +204,41 @@
       lineFill.style.width = pct + "%";
     }
 
-    function go(i, mode) { state.active = i; state.mode = mode; state.t = 0; render(); }
+    function go(i, mode) { state.active = i; state.mode = mode; state.t = 0; state.stall = 0; cue(i); render(); }
     function toEnd() { state.mode = "end"; state.t = 0; render(); }
+    function next() {
+      if (state.mode === "single") toEnd();
+      else if (state.active < slides.length - 1) go(state.active + 1, "reel");
+      else toEnd();
+    }
 
     function tick(now) {
       var dt = (now - last) / 1000; last = now;
       if (state.mode !== "end" && !state.paused) {
-        state.t += dt;
-        if (state.t >= seconds) {
-          if (state.mode === "single") toEnd();
-          else if (state.active < slides.length - 1) go(state.active + 1, "reel");
-          else toEnd();
-        } else paint();
+        var v = leadVideo(state.active);
+        var ok = running();
+        state.stall = ok ? 0 : (state.stall || 0) + dt;
+        var stuck = state.stall > 6; // a video that won't load must not freeze the reel
+        if (isFull(state.active) && v && !stuck) state.t = v.currentTime; // follow the film itself
+        else if (ok || stuck) state.t += Math.min(dt, 0.25);
+        if (state.t >= lengthOf(state.active) - 0.05) next();
+        else paint();
       }
       requestAnimationFrame(tick);
     }
+
+    slides.forEach(function (el, i) {
+      if (!isFull(i)) return;
+      videosIn(i).forEach(function (v) {
+        v.addEventListener("ended", function () { if (state.active === i && state.mode !== "end") next(); });
+        v.addEventListener("loadedmetadata", function () {
+          if (!isFinite(v.duration)) return;
+          var secs = Math.round(v.duration);
+          el.dataset.time = "00:" + (secs < 10 ? "0" : "") + secs;
+          if (state.active === i) render();
+        });
+      });
+    });
 
     tiles.forEach(function (el) {
       el.addEventListener("click", function () { go(+el.dataset.index, state.mode === "single" ? "single" : "reel"); });
@@ -214,6 +263,7 @@
     });
 
     if (reduce) { pauseBtn.textContent = "PLAY"; pauseBtn.setAttribute("aria-pressed", "true"); }
+    cue(0);
     render();
     requestAnimationFrame(tick);
   }

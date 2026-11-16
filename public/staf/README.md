@@ -1,13 +1,15 @@
 # STAF Films — test site
 
-Subpage of stephanteig.github.io that runs the full STAF Films site as if it had its own domain.
-Live (after merge): https://stephanteig.github.io/staf/
+Subpage of teigmedia.com (repo `stephanteig/teigmedia-home`, folder `public/staf/`) that runs the full STAF Films site as if it had its own domain.
+Live: https://teigmedia.com/staf/
+
+Files in `public/` are copied to the build unchanged by Vite, so these pages need no build step of their own.
 
 ## Structure
 
 ```
 staf/
-  index.html                         Home: showreel hero (reel → end card → single film) + sections
+  index.html                         Home: showreel hero (opener in full, then a segment of each film → end card → single film) + sections
   work/                              All work
   films/the-king-in-yellow/          Film page (in development)
   films/et-ekko-av-henne/            Film page (completed)
