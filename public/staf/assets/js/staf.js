@@ -2,12 +2,10 @@
 (function () {
   "use strict";
 
-  // ---------- Videos (Google Drive) ----------
-  // Every <video data-video="key"> gets its source from /staf/assets/videos.json.
-  // A key without a Drive id keeps its poster image, so the page still looks finished.
-  function driveUrl(id) {
-    return "https://drive.usercontent.google.com/download?id=" + encodeURIComponent(id) + "&export=download&confirm=t";
-  }
+  // ---------- Videos ----------
+  // Every <video data-video="key"> gets its source from /staf/assets/videos.json ("src": a web cut in
+  // /staf/assets/video/). Drive ids there are only the archive copy: Drive refuses to serve video
+  // to other websites. A key without a src keeps its poster image, so the page still looks finished.
 
   var videoMap = null;
   var videoReady = fetch("/staf/assets/videos.json", { cache: "no-cache" })
@@ -19,11 +17,11 @@
     if (!el || el.dataset.loaded) return;
     var key = el.dataset.video;
     var entry = videoMap && videoMap[key];
-    var id = entry && (typeof entry === "string" ? entry : entry.drive_id);
+    var url = entry && (typeof entry === "string" ? entry : entry.src);
     el.dataset.loaded = "1";
-    if (!id) return; // stays on its poster
+    if (!url) return; // stays on its poster
     el.addEventListener("error", function () { el.removeAttribute("src"); el.load(); }, { once: true });
-    el.src = driveUrl(id);
+    el.src = url;
     if (el.hasAttribute("autoplay") || el.dataset.play === "1") {
       var p = el.play(); if (p && p.catch) p.catch(function () {});
     }
