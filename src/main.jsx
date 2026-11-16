@@ -20,6 +20,11 @@ function App() {
       </nav>
 
       <section className="hero wrap" id="top">
+        <div className="live-test" role="status" aria-live="polite">
+          <span className="live-test-indicator" aria-hidden="true" />
+          <span className="live-test-label">LIVE SITE TEST</span>
+          <span className="live-test-copy">If you can read this, teigmedia.com reached the website.</span>
+        </div>
         <div className="hero-meta"><span>INDEPENDENT CREATIVE STUDIO</span><span>BASED IN NORWAY · WORKING EVERYWHERE</span></div>
         <h1>Ideas made<br/><em>visible.</em></h1>
         <div className="hero-bottom">
